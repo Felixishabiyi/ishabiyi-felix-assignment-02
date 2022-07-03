@@ -28,9 +28,17 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+  arrayOfNumbers = []
+  for (const i of arrayOfNumbers) {
+    if(i%2==0){
+      arrayOfNumbers.push(i)
+    } else {
+      continue
+    }
+  }
+  return arrayOfNumbers.length;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
 
 /**
  * Challenge - 3
