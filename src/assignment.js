@@ -27,9 +27,9 @@ function sumOfNumbers(arrayOfNumbers) {
  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
  * @returns number the count of even numbers
  */
-function countEvenNumbers(arrayOfNumbers) {
+function countEvenNumbers(E) {
   arrayOfNumbers = []
-  for (const i of arrayOfNumbers) {
+  for (const i of E) {
     if(i%2==0){
       arrayOfNumbers.push(i)
     } else {
